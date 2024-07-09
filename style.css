@@ -1,0 +1,163 @@
+:root {
+  --color: rgb(10, 57, 117);
+  --font: rgb(241, 243, 249);
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--font);
+  color: var(--color);
+}
+
+button {
+  padding: 15px 50px;
+  border: none;
+  border-radius: 15px;
+  background-color: hsl(0, 0%, 50%, 50%);
+  cursor: pointer;
+  transform: scale(1);
+  transition: transform 0.5s, box-shadow 0.5s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 1px 1px 10px 5px var(--color);
+  transition: transform 0.5s, box-shadow 0.5s;
+}
+
+textarea {
+  width: 300px;
+  border-radius: 10px;
+  resize: none;
+  border: none;
+  text-align: center;
+  /* background-color: rgb(92, 214, 250); */
+  color: black;
+}
+
+span > svg {
+  width: 25px;
+  height: 25px;
+  fill: white;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 150px;
+  margin-bottom: 20px;
+}
+.main > textarea {
+  color: black;
+  background-color: var(--font);
+}
+
+.main_btns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.main_btns > button:first-child {
+  background-color: var(--color);
+  color: white;
+}
+.main_btns > button:last-child {
+  border: 2px solid var(--color);
+  background-color: white;
+  color: var(--color);
+}
+
+.main_msg {
+  color: white;
+  font-size: 20px;
+}
+
+.card {
+  width: 300px;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border: none;
+  box-shadow: 5px 5px 15px 15px gray;
+  background-color: white;
+  border-radius: 10px;
+  gap: 20px;
+}
+
+.card > button {
+  border: 2px solid var(--color);
+  background-color: white;
+  color: var(--color);
+}
+
+.card_btn {
+  border: 2px solid var(--color);
+  background-color: white;
+  color: var(--color);
+}
+.card_count {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+
+.card_count > p {
+  text-align: center;
+}
+.contain_principal {
+  width: 100%;
+  height: 97%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  background-image: url("https://www.pandasecurity.com/es/mediacenter/src/uploads/2021/10/pandasecurity-encriptar.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+.card_textarea {
+  display: flex;
+
+  text-align: center;
+}
+
+.contain_head > svg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+}
+
+.card_textarea {
+  display: none;
+}
+
+.text11 {
+  display: none;
+}
+
+.text {
+  display: inline-block;
+}

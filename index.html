@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecriptador</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="contain_principal">
+      <span class="contain_head">
+        <svg
+          fill="#000000"
+          width="64px"
+          height="64px"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g
+            id="SVGRepo_tracerCarrier"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></g>
+          <g id="SVGRepo_iconCarrier">
+            <path
+              d="M8 21a1 1 0 0 1-1-1v-3H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-6.586l-3.707 3.707A1 1 0 0 1 8 21zM19 5H5v10h3a1 1 0 0 1 1 1v1.586l2.293-2.293A1 1 0 0 1 12 15h7V5z"
+            ></path>
+            <circle cx="16" cy="10" r="1"></circle>
+            <circle cx="12" cy="10" r="1"></circle>
+            <circle cx="8" cy="10" r="1"></circle>
+          </g>
+        </svg>
+      </span>
+      <article class="main">
+        <textarea
+          onkeyup="valorText(this.value)"
+          class="text1"
+          name="text1"
+          id="text1"
+          cols="50"
+          rows="10"
+          placeholder="Ingresa tu texto a encriptar"
+        ></textarea>
+        <div class="main_text">
+          <span>
+            <svg
+              fill="#000000"
+              width="64px"
+              height="64px"
+              viewBox="0 0 1024 1024"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  d="M512 768a256 256 0 1 1 0-512 256 256 0 0 1 0 512zm-27-168c-8 7-11 16-11 27s3 20 11 27c7 8 16 11 27 11s20-3 28-11c8-7 11-16 11-27s-3-20-11-27c-8-8-17-11-28-11s-20 4-27 11zm50-47l15-195h-76l15 195h46z"
+                ></path>
+              </g>
+            </svg>
+          </span>
+
+          <span class="main_msg">Solo letras en minúsculas y sin acentos</span>
+        </div>
+        <div class="main_btns">
+          <button id="encrip" onclick="handleEncrip()">Encriptar</button>
+          <button id="desencrip" onclick="handleDesencrip()">
+            Desencriptar
+          </button>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card_textarea">
+          <form>
+            <p>
+              <textarea
+                class="text"
+                name="text"
+                id="text"
+                cols="50"
+                rows="10"
+              ></textarea>
+            </p>
+          </form>
+        </div>
+        <div class="card_count">
+          <figure class="card_fig">
+            <img class="card_img" src="assets/1.png" alt="Figure1" />
+          </figure>
+          <p>Ingresa el texto que deseas encriptar o desencriptar</p>
+          <button id="copy" class="card_btn">copiar</button>
+        </div>
+      </article>
+    </section>
+
+    <script src="index.js"></script>
+  </body>
+</html>
