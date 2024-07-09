@@ -1,0 +1,1 @@
+Este proyecto es la versión uno de un encriptador y desencriptador de texto a partir de el uso de HTML, CSS y JavaScritp. Se desarrollo el proyecto a partir del uso del DOM con el fin de generar interactividad entre la estructura del proyecto y estilos.
